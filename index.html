@@ -1,8 +1,84 @@
-<p>Hello 大家好</p>
-<p>我是霸都丶傲天，这是我的个人网站。 </p>
-<p>很高兴你来到这里, 你可以在以下的网站找到我</p>
+<!DOCTYPE html>
+<html lang="en">
 
-<ul>
-  <li> <a href="https://www.zhihu.com/people/AJLoveChina">知乎</a> </li>
-  <li> <a href="http://hejie.nigeerhuo.com">我的博客(已经不更细了,现在在知乎写文章)</a> </li>
-</ul>
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>heh's private net</title>
+    <style>
+        html {
+            height: 100%;
+            width: 100%;
+            background-image: url("sundown.jpg ");
+            background-size: cover;
+
+        }
+
+        .h1 {
+            font-family: "微软雅黑";
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+
+
+    
+
+    <script>
+
+        var time = Date.parse(new Date());
+        times = time / 1000;
+        n = (times + 28800) / 86400;
+
+        day = parseInt(n % 8);
+
+
+        if (day == 3) {
+            document.write(" <h1>今天打扫卫生的是：陈瑞斌</h1>");
+            window.alert('陈瑞斌');
+        }
+        if (day == 4) {
+            document.write("<h1>今天打扫卫生的是：池龙</h1>");
+            window.alert('池龙');
+        }
+        if (day == 5) {
+            document.write("<h1>今天打扫卫生的是：黄思晨</h1>");
+            window.alert('黄思晨');
+        }
+        if (day == 6) {
+            document.write("<h1>今天打扫卫生的是：韩一凡</h1>");
+            window.alert('韩一凡');
+        }
+        if (day == 7) {
+            document.write("<h1>今天打扫卫生的是：刘松于</h1>");
+            window.alert('刘松于');
+        }
+        if (day == 0) {
+            document.write("<h1>今天打扫卫生的是：李振楠</h1>");
+
+        }
+        if (day == 1) {
+            document.write("<h1>今天打扫卫生的是：隋枫贺</h1>");
+            window.alert('隋枫贺');
+        }
+        if (day == 2) {
+            document.write("<h1>今天打扫卫生的是：薛翔</h1>");
+            window.alert('薛翔');
+        }
+
+    </script>
+
+    <audio controls autoplay="autoplay">
+        <source src="告五人 - 唯一.mp3" type="audio/mpeg">
+
+        <embed height="50" width="100" src="horse.mp3">
+    </audio>
+</body>
+
+</html>
