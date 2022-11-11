@@ -2,83 +2,278 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>heh's private net</title>
+    <title>Document</title>
     <style>
-        html {
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url("back.jpg");
             height: 100%;
             width: 100%;
-            background-image: url("sundown.jpg ");
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+
+
+        .top {
+            height: 53px;
+            width: 100%;
+            background-color: rgb(27, 25, 0, 0);
+
+
+            float: left;
+            position: fixed;
+        }
+
+        .top .alert {
+            float: left;
+            height: 53px;
+            color: white;
+            font-size: 30px;
+
+
+
+        }
+
+
+
+        .top .music {
+            float: right;
+            height: 53px;
+
+        }
+
+
+        .page1 {
+
+
+            background-color: rgba(255, 255, 255, 0);
+            margin: 0;
+            font-size: 170px;
+            color: white;
+
+
+
+            background-image: url("page1.jpg");
+            height: 730px;
+            width: 100%;
             background-size: cover;
 
+            text-align: center;
+
+
+
+
+
         }
 
-        .h1 {
-            font-family: "微软雅黑";
+        .page2 {
+
+
+            width: 100%;
+
+            height: 900px;
+            margin-top: 730px;
+            background-image: url("page2.jpg");
+            background-size: cover;
+            color: white;
+        }
+
+        .page2 .left {
+
+            float: left;
+            background-color: rgba(255, 255, 255, 0);
+            width: 20%;
+            height: 100%;
+        }
+
+        .page2 .head {
+            float: left;
+            width: 20%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0);
+
+
+
+
+
+        }
+
+        .page2 .head .image {
+            float: central;
+            width: 100px;
+            height: 100px;
+
+            margin-left: 50px;
+            margin-top: 300px;
+
+            background-image: url("headimage.jpg");
+            background-size: cover;
+        }
+
+        .page2 .banner {
+
+            margin-top: 250px;
+            width: 40%;
+
+            float: left;
+
+
+            height: 60%;
+            background-color: rgba(255, 255, 255, 0);
+            color: white;
+            font-size: 30px;
+            font-weight: 100;
+            font-size: 20px;
+
+        }
+
+        .page2 .text {
+            float: left;
+            width: 40%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0);
+
+        }
+
+
+
+        .page10 {
+            width: 100%;
+            margin: auto;
+            height: 730px;
+            background-image: url("page10.jpg");
+            background-size: cover;
+            font-size: 20px;
+            color: rgba(255, 255, 255, 0);
+
+            transition: all .6s;
+            text-align: center;
+
+
+        }
+
+        .page10:hover {
+            color: white;
+            background-color: black;
         }
     </style>
-
 </head>
 
 <body>
 
+    <div class="top">
+        <div class="alert">
+            <script>
+
+                var time = Date.parse(new Date());
+                times = time / 1000;
+                n = (times + 28800) / 86400;
+
+                day = parseInt(n % 8);
+
+
+                if (day == 3) {
+                    document.write(" <div>今天打扫卫生的是：陈瑞斌</div>");
+
+                }
+                if (day == 4) {
+                    document.write("<div>今天打扫卫生的是：池龙</div>");
+
+                }
+                if (day == 5) {
+                    document.write("<div>今天打扫卫生的是：黄思晨</div>");
+
+                }
+                if (day == 6) {
+                    document.write("<div>今天打扫卫生的是：韩一凡</div>");
+
+                }
+                if (day == 7) {
+                    document.write("<div>今天打扫卫生的是：刘松于</div>");
+
+                }
+                if (day == 0) {
+                    document.write("<div>今天打扫卫生的是：李振楠</div>");
+
+                }
+                if (day == 1) {
+                    document.write("<div>今天打扫卫生的是：隋枫贺</div>");
+
+                }
+                if (day == 2) {
+                    document.write("<div>今天打扫卫生的是：薛翔</div>");
+
+                }
+            </script>
+        </div>
+        <div class="music">
+            <audio controls autoplay="autoplay">
+                <source src="告五人 - 唯一.mp3" type="audio/mpeg">
+
+
+            </audio>
+        </div>
+    </div>
+    <div class="page1">
+        <br>
+        HEH
+    </div>
+    <div class="page2">
+        <div class="left">
+
+        </div>
+        <div class="head">
+            <div class="image"></div>
+        </div>
+        <div class="banner">
+            本站于2022年11月12日0时25分17秒创建。<br>
+            <br>
+            本人爱好人工智能，神经科学，嵌入式开发，网站软件开发。<br>
+            <br>
+            并且对金融股票经济历史哲学具有浓厚兴趣。<br><br>
+            学习过python,c,html,css。<br><br>
+            相当浅薄的接触javascript,php。<br><br>
+            这算本人的第一个项目。<br><br>
+            希望能够坚持下去，并且做得更加好。<br><br>
+        </div>
 
 
 
-    
-
-    <script>
-
-        var time = Date.parse(new Date());
-        times = time / 1000;
-        n = (times + 28800) / 86400;
-
-        day = parseInt(n % 8);
-
-
-        if (day == 3) {
-            document.write(" <h1>今天打扫卫生的是：陈瑞斌</h1>");
-            window.alert('陈瑞斌');
-        }
-        if (day == 4) {
-            document.write("<h1>今天打扫卫生的是：池龙</h1>");
-            window.alert('池龙');
-        }
-        if (day == 5) {
-            document.write("<h1>今天打扫卫生的是：黄思晨</h1>");
-            window.alert('黄思晨');
-        }
-        if (day == 6) {
-            document.write("<h1>今天打扫卫生的是：韩一凡</h1>");
-            window.alert('韩一凡');
-        }
-        if (day == 7) {
-            document.write("<h1>今天打扫卫生的是：刘松于</h1>");
-            window.alert('刘松于');
-        }
-        if (day == 0) {
-            document.write("<h1>今天打扫卫生的是：李振楠</h1>");
-
-        }
-        if (day == 1) {
-            document.write("<h1>今天打扫卫生的是：隋枫贺</h1>");
-            window.alert('隋枫贺');
-        }
-        if (day == 2) {
-            document.write("<h1>今天打扫卫生的是：薛翔</h1>");
-            window.alert('薛翔');
-        }
-
-    </script>
-
-    <audio controls autoplay="autoplay">
-        <source src="告五人 - 唯一.mp3" type="audio/mpeg">
-
-        <embed height="50" width="100" src="horse.mp3">
-    </audio>
+    </div>
+    <div class="page10">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        不要温和地走进那良夜，<br>
+        老年应当在日暮时燃烧咆哮；<br>
+        怒斥，怒斥光明的消逝。<br>
+        虽然智慧的人临终时懂得黑暗有理，<br>
+        因为他们的话没有迸发出闪电，他们<br>
+        也并不温和地走进那个良夜。<br>
+        善良的人，当最后一浪过去，高呼他们脆弱的善行<br>
+        可能曾会多么光辉地在绿色的海湾里舞蹈，<br>
+        怒斥，怒斥光明的消逝。<br>
+        狂暴的人抓住并歌唱过翱翔的太阳，<br>
+        懂得，但为时太晚，他们使太阳在途中悲伤，<br>
+        也并不温和地走进那个良夜。<br>
+        严肃的人，接近死亡，用炫目的视觉看出<br>
+        失明的眼睛可以像流星一样闪耀欢欣，<br>
+        怒斥，怒斥光明的消逝。<br>
+        您啊，我的父亲。在那悲哀的高处。<br>
+        现在用您的热泪诅咒我，祝福我吧。我求您<br>
+        不要温和地走进那个良夜。<br>
+        怒斥，怒斥光明的消逝。<br>
+    </div>
 </body>
 
 </html>
